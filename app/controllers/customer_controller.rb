@@ -10,14 +10,14 @@ class CustomerController < ApplicationController
 
 		respond_to do |format|
 			if @customer.save
-				format.html { redirect_to(customer_thanks_url, :notice => 'User was successfully created.') }
+				format.html { redirect_to(customer_success_url, :notice => 'Thanks, Customer successfully created.') }
 			else
-				format.html { render :action => "register" }
+				format.html { redirect_to(customer_register_url, :notice => 'Error, Customer creation failed.') }
 			end
 		end
 	end
 
-	def thanks
+	def success
 	    
 	end
 
