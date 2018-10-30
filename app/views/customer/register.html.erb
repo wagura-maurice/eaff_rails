@@ -1,0 +1,7 @@
+<%= form_tag("/customer/create", method: "post") do %>
+  <%= label_tag(:name, "name:") %>
+  <%= text_field_tag(:name) %>
+  <%= label_tag(:phone, "phone:") %>
+  <%= text_field_tag(:phone) %>
+  <%= submit_tag("Submit") %>
+<% end %>
