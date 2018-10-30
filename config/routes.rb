@@ -3,5 +3,4 @@ Rails.application.routes.draw do
   get 'customer/register'
   post 'customer/create'
   get 'customer/success'
-  # get '/'
 end
